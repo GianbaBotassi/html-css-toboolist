@@ -34,6 +34,7 @@ main, #task-section-buttons{
     width: 70%;
     margin: auto;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 /* Task section styles */
@@ -48,7 +49,7 @@ main, #task-section-buttons{
 #add-task-button, #add-section-button{
     font-size: 8px;
     padding: 3px 5px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 #add-task-button{
     background-color: #47adf1;
@@ -69,10 +70,12 @@ h5::before{
     content: '\25BC';
     font-size: 8px;
 }
+h5{
+    margin-bottom: 5px;
+}
 div{
-    font-size: 12px;
-    padding-top: 10px;
-    display: inline-block;
+    font-size: 0.7em;
+    padding-top: 2px;
 }
 
 /* Done and not-done task styles */
@@ -86,10 +89,10 @@ div{
     width: 12px;
     text-align: center;
 }
-.done-task::before{
-    content: '\2713';
-    color: green;
-    border: solid 1px green;
+.not-done-task::before{
+    content: '\2715';
+    color: red;
+    border: solid 1px red;
     border-radius: 50%;
     display: inline-block;
     font-size: 8px;
@@ -99,58 +102,58 @@ div{
 
 /* Label styles */
 
-.editorial-label{
-    display: inline-block;
+.editorial-label::after{
     background-color: #47adf1;
     border: #47adf1 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Editorial';
 }
-.q1-goals-label{
-    display: inline-block;
+.q1-goals-label::after{
     background-color: #9c72e4;
     border: #9c72e4 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Q1 goals';
 }
-.recruiting-label{
-    display: inline-block;
+.recruiting-label::after{
     background-color: #64c0a9;
     border: #64c0a9 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Recruiting';
 }
-.mobile-label{
-    display: inline-block;
+.mobile-label::after{
     background-color: #f29e33;
     border: #f29e33 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Mobile';
 }
-.website-label{
-    display: inline-block;
+.website-label:after{
     background-color: #d863a1;
     border: #d863a1 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Website';
 }
-.sales-label{
-    display: inline-block;
+.sales-label::after{
     background-color: #b0c926;
     border: #b0c926 solid 1px;
     color: white;
     border-radius: 7px;
     font-size: 8px;
     padding: 3px 5px;
+    content: 'Sales';
 }
 
