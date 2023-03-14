@@ -5,15 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
-    background-color: #f6f8f9;
+    font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;     background-color: #f6f8f9;
 }
 
 /* Header styles */
 h1{
     display: inline-block;
     position: absolute;
-    top: 5px;
+    top: 10px;
     font-size: 24px;
 
 }
@@ -27,8 +26,131 @@ header{
     width: 50px;
     height: 50px;
 }
-body{
-    background-color: #f6f8f9;
+
+
+/* Container main */
+main, #task-section-buttons{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding-left: 20px;
 }
 
+/* Task section styles */
+
+#task-section-buttons{
+    background-color: white;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    padding-top: 10px;
+}
+#add-task-button, #add-section-button{
+    font-size: 8px;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+#add-task-button{
+    background-color: #47adf1;
+    border: #47adf1 solid 1px;
+    color: white;
+}
+#add-section-button{
+    border: #d3d8db solid 1px;
+    color: #d3d8db;
+    background-color: white;
+}
+
+/* New task styles */
+.task-sections{
+    padding-top: 20px;
+}
+h5::before{
+    content: '\25BC';
+    font-size: 8px;
+}
+div{
+    font-size: 12px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+/* Done and not-done task styles */
+.done-task::before{
+    content: '\2713';
+    color: green;
+    border: solid 1px green;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 8px;
+    width: 12px;
+    text-align: center;
+}
+.done-task::before{
+    content: '\2713';
+    color: green;
+    border: solid 1px green;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 8px;
+    width: 12px;
+    text-align: center;
+}
+
+/* Label styles */
+
+.editorial-label{
+    display: inline-block;
+    background-color: #47adf1;
+    border: #47adf1 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.q1-goals-label{
+    display: inline-block;
+    background-color: #9c72e4;
+    border: #9c72e4 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.recruiting-label{
+    display: inline-block;
+    background-color: #64c0a9;
+    border: #64c0a9 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.mobile-label{
+    display: inline-block;
+    background-color: #f29e33;
+    border: #f29e33 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.website-label{
+    display: inline-block;
+    background-color: #d863a1;
+    border: #d863a1 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
+.sales-label{
+    display: inline-block;
+    background-color: #b0c926;
+    border: #b0c926 solid 1px;
+    color: white;
+    border-radius: 7px;
+    font-size: 8px;
+    padding: 3px 5px;
+}
 
